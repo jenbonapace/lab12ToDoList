@@ -13,7 +13,7 @@
     <h3> A To Do List </h3>
 
     <div ng-controller="myController">Search
-      <input ng-model="itemsInList" />
+        <input ng-model="itemsInList" />
 
         <ul>
             <li ng-repeat="item in items | filter: itemsInList track by $index">
@@ -24,8 +24,10 @@
             <label>Add Item<input type="text" ng-model="stuff" /></label>
             <input type="submit" id="input" value="Add" ng-click="addItem()">
         </p>
-
-    </div><br>
+    </div>
+    <footer>Created by Jennifer Bonapace<br> March 09,2017
+        <a href="https://github.com/jenbonapace/lab12ToDoList">View the Code!</a>
+    </footer>
 </body>
 
 </html>
